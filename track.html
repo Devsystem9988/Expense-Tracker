@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="balance">
+          <h2>Your Balance</h2>
+          <h3 id="balance">$0.00</h3>
+        </div>
+        <div class="income-expense">
+          <div class="money plus">
+            <h3>Income</h3>
+            <p id="income">+$0.00</p>
+          </div>
+          <div class="money minus">
+            <h3>Expense</h3>
+            <p id="expense">-$0.00</p>
+          </div>
+        </div>
+        <h3>Transaction History</h3>
+        <ul id="history" class="history">
+          <!-- Transaction history items will appear here -->
+        </ul>
+        <h3>Add Transaction</h3>
+        <form id="transaction-form">
+          <input type="text" id="description" placeholder="Enter description" required>
+          <input type="number" id="amount" placeholder="Enter amount (positive/negative)" required>
+          <button type="submit">Add Transaction</button>
+        </form>
+      </div>
+
+    <script src="track.js"></script>
+</body>
+</html>
